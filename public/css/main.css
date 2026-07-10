@@ -1,0 +1,23 @@
+/* Layer declaration */
+@layer tokens, base, layout, components, utilities;
+
+/* Tokens */
+@import url('tokens/color.css') layer(tokens);
+@import url('tokens/variables') layer(tokens);
+
+/* Base */
+@import url('base/reset.css') layer(base);
+@import url('base/elements.css') layer(base);
+
+/* Layout */
+@import url('layout/primary.css') layer(layout);
+
+/* Components */
+@import url('components/card.css') layer(components);
+@import url('components/button.css');
+@import url('components/nav.css');
+@import url('components/theme-toggle.css') layer(components); /*add theme-toggle*/
+@import url('components/effects.css');
+
+/* Utilities */
+@import url('utilities/utilities.css') layer(utilities);
