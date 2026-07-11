@@ -1,25 +1,25 @@
-.articles {
-  /* Base: each card manages its own rows */
-  .card {
-    display: grid;
-    grid-template-rows: auto auto 1fr auto;
-  }
+/* .articles-page { */
+/* Base: each card manages its own rows */
+.card {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+}
 
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(240px, 100%), 1fr));
+}
+
+/* Progressive enhancement: share tracks with the parent */
+@supports (grid-template-rows: subgrid) {
   .card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(240px, 100%), 1fr));
+    grid-template-rows: auto auto 1fr auto;
+    align-items: stretch;
   }
 
-  /* Progressive enhancement: share tracks with the parent */
-  @supports (grid-template-rows: subgrid) {
-    .card-grid {
-      grid-template-rows: auto auto 1fr auto;
-      align-items: stretch;
-    }
-
-    .card {
-      grid-row: span 4;
-      grid-template-rows: subgrid;
-    }
+  .card {
+    grid-row: span 4;
+    grid-template-rows: subgrid;
   }
 }
+/* } */
