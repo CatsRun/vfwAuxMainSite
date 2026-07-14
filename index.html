@@ -8,6 +8,8 @@
     <title>VFW Aux 12202 Home</title>
     <base href="/vfwAuxMainSite/">
     <link rel="stylesheet" href="public/css/main.css">
+    <!-- check here for styles path if not working on Git Pages ^^^, remove leading / -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   </head>
     
@@ -17,29 +19,34 @@
 
     <header>
         <div>
-            <a href="index.html"><img src="images/Emblem-Facebook-Profile-Picture.jpg" alt="VFW Auxiliary"></a> 
+            <a class="navbar-brand" href="index.html"><img src="images/Emblem-Facebook-Profile-Picture.jpg" alt="VFW Auxiliary"></a> 
             <p>SGT Nicholas C. Mason Memorial VFW Auxiliary 12202</p>
-        </div>
-        <nav class= "site-nav">
-            <ul>
-                <li><a href="#" aria-current="page">Home</a></li>
-                <li><a href="views/about.html">About</a></li>
-                <li><a href="views/join.html">Join</a></li>
-                <!-- <li><a href="/views/programs.html">Programs</a></li> -->
-                <!-- <li><a href="/views/resources.html">Resources</a></li> -->
-                <!-- <li><a href="/views/news.html">News</a></li> -->
-                <li><a href="vfwAuxMainSite/views/contact.html">Contact</a></li>
-                <li><a href="vfwAuxMainSite/views/support.html">Support</a></li>
-            </ul>
-        </nav>
+        </div>        
+        <!-- <nav class= "site-nav navbar navbar-expand-lg bg-body-tertiary"> -->
+         <div class="container"> 
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div "container-fluid">
+                <ul>
+                    <li><a class="nav-link active" href="#" aria-current="page">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="views/about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="views/join.html">Join</a></li>
+                    <!-- <li><a href="/views/programs.html">Programs</a></li> -->
+                    <!-- <li><a href="/views/resources.html">Resources</a></li> -->
+                    <!-- <li><a href="/views/news.html">News</a></li> -->
+                    <li class="nav-item"><a class="nav-link" href="vfwAuxMainSite/views/contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="vfwAuxMainSite/views/support.html">Support</a></li>
+                </ul>
+            </div> 
+        </nav>    
+       </div>       
     </header>
 
     <main>
         <h1>Home</h1>
         <div class="hero">
-            <img src="/images/VFW-Auxiliary-Flag-Black-BackgroundCover-Photo.jpg" alt="American Flag">
-        <a href="/views/join.html"><button type="button" class="btn btn-primary">Join</button></a>
-        <a href="/views/support.html"><button type="button" class="btn btn-primary">Donate</button></a>
+            <img src="images/VFW-Auxiliary-Flag-Black-BackgroundCover-Photo.jpg" class="img-fluid" alt="American Flag">
+        <a href="views/join.html"><button type="button" class="btn btn-primary">Join</button></a>
+        <a href="views/support.html"><button type="button" class="btn btn-primary">Donate</button></a>
         </div>
         <article>
             <div class="card">
@@ -73,7 +80,7 @@
                 <li><a href="https://malta.vfwauxiliary.org/Account/NewLogin ">MALTA</a></li>
                 <li><a href="https://vfwauxiliary.org/ ">National VFW Auxiliary</a></li>
                 <li><a href="https://vfwauxva.org/di/vfw/v2/default.asp ">Virginia VFW Auxiliary</a></li>
-                <li><a href="https://www.facebook.com/KingGeorgeVFWAuxiliary/posts/today-and-everyday-we-remember/1004487215451164/"><img src="/images/facebook_icon.png" alt="Facebook"></a></li>
+                <li><a href="https://www.facebook.com/KingGeorgeVFWAuxiliary/posts/today-and-everyday-we-remember/1004487215451164/"><img src="images/facebook_icon.png" alt="Facebook"></a></li>
                 <li><a href="/forms/member_application_fillab.pdf" target="_blank">Membership Form</a></li>
             </ul>
         </div>

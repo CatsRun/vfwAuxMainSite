@@ -1,0 +1,46 @@
+:root {
+  /*** spacing ***/
+  /***  begin  ***/
+  /* Spacing: at least sm, md, lg */
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --line-height-sm: 1.25;
+  --line-height-md: 1.5;
+  --line-height-lg: 1.75;
+
+  /* padding */
+  --padding-sm: var(--spacing-sm);
+  --padding-md: var(--spacing-md);
+  --padding-lg: var(--spacing-lg);
+
+  /* Typography: font family, base size */
+  --font-body: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-size-sm: 1rem;
+  --font-size-base: 1.5rem;
+  /* **should this have vw to size to view window?** */
+  --font-size-lg: 3.2rem;
+
+  /* change in headings */
+  --font-h1-difference: 2;
+  --font-h2-difference: 1.7;
+  --font-h3-difference: 1.1;
+
+  /* h1 */
+  --font-size-sm-h1: calc(var(--font-size-sm) * var(--font-h1-difference));
+  --font-size-base-h1: calc(var(--font-size-base) * var(--font-h1-difference));
+  --font-size-lg-h1: calc(var(--font-size-lg) * var(--font-h1-difference));
+
+  /* h2 */
+  --font-size-sm-h2: calc(var(--font-size-sm) * var(--font-h2-difference));
+  --font-size-base-h2: calc(var(--font-size-base) * var(--font-h2-difference));
+  --font-size-lg-h2: calc(var(--font-size-lg) * var(--font-h2-difference));
+
+  /* h3 */
+  --font-size-sm-h3: calc(var(--font-size-sm) * var(--font-h3-difference));
+  --font-size-base-h3: calc(var(--font-size-base) * var(--font-h3-difference));
+  --font-size-lg-h3: calc(var(--font-size-lg) * var(--font-h3-difference));
+
+  /* Borders: radius */
+  --border-radius: 8px;
+}
