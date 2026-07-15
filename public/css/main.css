@@ -15,7 +15,7 @@
 /* Components */
 @import url('components/cards.css') layer(components);
 @import url('components/button.css') layer(components);
-/* @import url('components/nav.css') layer(components); */
+@import url('components/nav.css') layer(components);
 @import url('components/theme-toggle.css') layer(components); /*add theme-toggle*/
 @import url('components/effects.css') layer(components);
 
