@@ -1,2 +1,6 @@
-header {
+*,
+*::before,
+*::after {
+  max-width: 1000px;
+  justify-self: center;
 }
