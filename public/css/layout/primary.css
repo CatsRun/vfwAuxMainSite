@@ -1,17 +1,25 @@
-*,
+/* *,
 *::before,
-*::after {
-  max-width: 1000px;
-  justify-self: center;
-  /* background-color: var(--color-bg-page); */
+*::after { */
+/* justify-self: center; */
+/* background-color: var(--color-bg-page); */
+/* } */
+body {
+  background-image: url('/images/flag-backgound.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(5px);
+  /* backdrop-filter: grayscale(70%); */
 }
 
 main {
   margin-top: 3rem;
+  max-width: 1000px;
+  margin: 3rem;
 }
-.hero {
+/* .hero {
   margin-top: 5rem;
-}
+} */
 
 .footer-links ul {
   display: grid;
@@ -20,18 +28,6 @@ main {
   list-style: none;
 }
 
-.home-page div {
-  margin: 2rem;
-}
-
-/* .home-page btn {
-  margin: 10rem;
-} */
-
-/* main div {
+/* .home-page div {
   margin: 2rem;
 } */
-
-.test2 {
-  background-color: aquamarine;
-}
