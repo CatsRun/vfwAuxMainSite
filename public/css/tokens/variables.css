@@ -1,4 +1,5 @@
-:root {
+/* :root { */
+.test {
   /*** spacing ***/
   /***  begin  ***/
   /* Spacing: at least sm, md, lg */
@@ -26,6 +27,128 @@
   --font-h2-difference: 1.7;
   --font-h3-difference: 1.1;
 
+  /* h1 */
+  --font-size-sm-h1: calc(var(--font-size-sm) * var(--font-h1-difference));
+  --font-size-base-h1: calc(var(--font-size-base) * var(--font-h1-difference));
+  --font-size-lg-h1: calc(var(--font-size-lg) * var(--font-h1-difference));
+
+  /* h2 */
+  --font-size-sm-h2: calc(var(--font-size-sm) * var(--font-h2-difference));
+  --font-size-base-h2: calc(var(--font-size-base) * var(--font-h2-difference));
+  --font-size-lg-h2: calc(var(--font-size-lg) * var(--font-h2-difference));
+
+  /* h3 */
+  --font-size-sm-h3: calc(var(--font-size-sm) * var(--font-h3-difference));
+  --font-size-base-h3: calc(var(--font-size-base) * var(--font-h3-difference));
+  --font-size-lg-h3: calc(var(--font-size-lg) * var(--font-h3-difference));
+
+  /* Borders: radius */
+  --border-radius: 8px;
+}
+/* *********** */
+:root {
+  /* Typography */
+  --font-family-sans: system-ui, sans-serif;
+  --font-family-mono: monospace;
+  --font-size-sm: 1.4rem;
+  --font-size-md: 1.6rem;
+  --font-size-lg: 1.8rem;
+
+  /* legacy names */
+  /* Typography: font family, base size */
+  --font-body: var(--font-family-sans);
+  --font-size-base: var(--font-size-md);
+  /* **should this have vw to size to view window?** */
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  /* why are these in px not rem? will that make */
+
+  /* legacy */
+  /* Spacing: at least sm, md, lg */
+  /* --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --line-height-sm: 1.25;
+  --line-height-md: 1.5;
+  --line-height-lg: 1.75; */
+
+  /* Radii */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+
+  /* Transitions */
+  --transition-base: 0.2s ease;
+
+  /* Icons */
+  --icon-size-sm: 24px;
+  --icon-size-md: 32px;
+
+  /* Focus */
+  --outline-width: 2px;
+
+  /* these were not in the recomended items for this file. Should I move them? */
+  /* padding */
+  --padding-sm: var(--spacing-sm);
+  --padding-md: var(--spacing-md);
+  --padding-lg: var(--spacing-lg);
+
+  /* change in headings */
+  --font-h1-difference: 2;
+  --font-h2-difference: 1.7;
+  --font-h3-difference: 1.1;
+
+  /* shadow */
+  /* ***legacy*** */
+  --color-shadow: #0c0c0c 0px 4px 8px, #0c0c0c 0px 6px 20px;
+  --color-shadow-secondary: #0c0c0c 0px 2px 4px, #0c0c0c 0px 3px 10px;
+  /* *** */
+
+  --shadow-card: light-dark(var(--shadow-md), var(--shadow-md-dark));
+  --shadow-card-hover: light-dark(var(--shadow-lg), var(--shadow-lg-dark));
+  --color-link-hover: light-dark(var(--seed-link-hover), oklch(0.72 0.18 240));
+  /* text-shadow */
+  --shadow-text: 0 1px 3px oklch(0.1 0 0 / 0.5), 4px 4px 8px rgba(0, 0, 0, 0.3);
+
+  --shadow-drop: 0 0 2px rgba(0, 0, 0, 0.5);
+  /* --shadow-drop-glow: 0 0 2px var(--color-surface); */
+
+  --shadow-drop-glow: 0 0 2px currentcolor;
+  --shadow-drop-glow-dark:
+    color-mix(in oklch, var(--shadow-drop-glow) 30%, white)
+      /* --shadow-drop-glow: light-dark(
+    0 0 2px var(--color-surface),
+    color-mix(in oklch, var(--seed-accent) 75%, white)
+  ); */
+      /*why does this not work?*/
+      /* https://byui-cse.github.io/wdd331r-course/unit/3/learn/shadows-gradients.html */
+      /* Level 1: buttons, inputs, low cards */ --shadow-sm: 0 1px 2px
+      oklch(0.2 0 0 / 0.1),
+    0 2px 4px oklch(0.2 0 0 / 0.06);
+  /* Level 2: raised cards, dropdowns */
+  --shadow-md:
+    0 2px 4px oklch(0.2 0 0 / 0.1), 0 6px 12px oklch(0.2 0 0 / 0.07),
+    0 16px 32px oklch(0.2 0 0 / 0.05);
+  /* Level 3: modals, popovers, dialogs */
+  --shadow-lg:
+    0 4px 8px oklch(20.019% 0.00002 271.152 / 0.201),
+    0 12px 24px oklch(20.019% 0.00002 271.152 / 0.182),
+    0 24px 48px oklch(20.019% 0.00002 271.152 / 0.15);
+
+  --shadow-md-dark:
+    0 2px 4px oklch(68.79% 0.00231 15.354 / 0.24),
+    0 6px 12px oklch(70.9% 0.00008 271.152 / 0.287),
+    0 16px 32px oklch(92.268% 0.00106 11.712 / 0.164);
+
+  --shadow-lg-dark:
+    0 1px 2px oklch(68.79% 0.00231 15.354 / 0.618),
+    0 4px 8px oklch(70.9% 0.00008 271.152 / 0.555),
+    0 12px 24px oklch(92.268% 0.00106 11.712 / 0.373);
   /* h1 */
   --font-size-sm-h1: calc(var(--font-size-sm) * var(--font-h1-difference));
   --font-size-base-h1: calc(var(--font-size-base) * var(--font-h1-difference));

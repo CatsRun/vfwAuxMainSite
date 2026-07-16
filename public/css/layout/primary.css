@@ -3,4 +3,9 @@
 *::after {
   max-width: 1000px;
   justify-self: center;
+  /* background-color: var(--color-bg-page); */
+}
+
+.hero {
+  margin-top: 5rem;
 }

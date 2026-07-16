@@ -5,10 +5,23 @@ html {
   /* base colors */
 
   /* reverenfec from main aux site */
-  --color-card-bg: oklch(0.27 0.07 282 1); /*event card background*/
-  --color-banner-bg: oklch(0.45 0.04 257.44 1); /*moving banner of img*/
-  --color-active-tab-bg: oklch(0.47 0.17 27.9 1); /* nav tab for active tab*/
-  --color-text-accent: oklch(0.47 0.17 27.97 1) !important; /*h2*/
-  --color-button-accent: oklch(0.6 0.22 257.43 1); /*join button */
-  --color-text: oklch(0.58 0.19 256.31 1) /*date above h2*/;
+  --color-card-bg-ref: oklch(0.27 0.07 282 1); /*event card background*/
+  --color-banner-bg-ref: oklch(0.45 0.04 257.44 1); /*moving banner of img*/
+  --color-active-tab-bg-ref: oklch(
+    0.47 0.17 27.9 1
+  ); /* nav tab for active tab*/
+  --color-text-accent-ref: oklch(0.47 0.17 27.97 1) !important; /*h2*/
+  --color-button-accent-ref: oklch(
+    59.667% 0.22126 258.047 / 0.229
+  ); /*join button */
+  --color-text-ref: oklch(0.58 0.19 256.31 1); /*date above h2*/
+
+  --color-bg: oklch(26.38% 0.07993 252.428 / 0.8);
+  --color-bg-page: oklch(26.112% 0.00372 286.029 / 0.176);
+  /* --color-card-bg: oklch(0.45 0.04 257.44 1); */
+
+  /* **nav** */
+  .navbar {
+    background-color: var(--color-bg);
+  }
 }
