@@ -1,7 +1,7 @@
 /* Base: each card manages its own rows */
 .card {
   display: grid;
-  grid-template-rows: auto auto 1fr auto;
+  grid-template-rows: 1fr 1fr auto auto;
 }
 
 .card-grid {
@@ -17,7 +17,7 @@
   }
 
   .card {
-    grid-row: span 4;
+    grid-row: span 2;
     grid-template-rows: subgrid;
   }
 }
@@ -37,11 +37,8 @@
 }
 
 .card {
-  /* background, padding, border-radius, shadow */
-  /* Use a var() with a fallback value here. */
   background-color: var(--color-accent, --color-background-secondary);
-  /* box-shadow: var(--color-shadow, --color-shadow-secondary); */
-  /* box-shadow: var(--color-shadow, (#0c0c0c 0px 2px 4px, #0c0c0c 0px 3px 10px)); */
+  box-shadow: var(--color-shadow, --color-shadow-secondary);
 
   border-radius: 25px;
   margin: var(--spacing-sm);
@@ -72,8 +69,8 @@
     font-family: var(--font-body);
     font-size: clamp(
       var(--font-size-sm),
-      var(--font-size-base),
-      var(--font-size-lg)
+      var(--font-size-sm),
+      var(--font-size-base)
     );
   }
   .card-meta {
@@ -82,9 +79,9 @@
     span {
       font-size: var(--font-size-sm);
     }
-    a {
+    /* a {
       accent-color: var(--color-link);
-    }
+    } */
   }
 }
 /* } */

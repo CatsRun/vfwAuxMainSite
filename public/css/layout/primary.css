@@ -9,3 +9,17 @@
 .hero {
   margin-top: 5rem;
 }
+
+.footer-links ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 2rem;
+}
+
+.home-page div {
+  margin: 2rem;
+}
+
+.home-page btn {
+  margin: 10rem;
+}
