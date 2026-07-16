@@ -6,6 +6,9 @@
   /* background-color: var(--color-bg-page); */
 }
 
+main {
+  margin-top: 3rem;
+}
 .hero {
   margin-top: 5rem;
 }
@@ -20,6 +23,14 @@
   margin: 2rem;
 }
 
-.home-page btn {
+/* .home-page btn {
   margin: 10rem;
+} */
+
+/* main div {
+  margin: 2rem;
+} */
+
+.test2 {
+  background-color: aquamarine;
 }
