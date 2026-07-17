@@ -62,3 +62,9 @@ footer {
 .footer-links a {
   background-color: rgba(0, 0, 0, 0.564);
 }
+
+/* photo carousel */
+.carousel-item img {
+  max-height: 400px; /* adjust as needed */
+  object-fit: contain; /* or 'cover' */
+}

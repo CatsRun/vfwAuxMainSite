@@ -59,7 +59,8 @@
 }
 
 .card {
-  background-color: var(--color-accent, --color-background-secondary);
+  /* background-color: var(--color-accent, --color-background-secondary); */
+
   box-shadow: var(--color-shadow, --color-shadow-secondary);
 
   border-radius: 25px;
@@ -106,4 +107,13 @@
     } */
   }
 }
+.photo-book img {
+  max-height: 100rem;
+}
 /* } */
+
+.qr-code {
+  max-height: 400px;
+  /* object-fit: contain; */
+  /* padding: 15rem; */
+}
