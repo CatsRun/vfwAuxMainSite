@@ -59,11 +59,6 @@ footer {
   color: white;
   text-decoration: none;
 }
-/* .footer-links {
-  background-color: rgba(0, 0, 0, 0.1);
-} */
-
-a {
-  color: rgb(255 255 255);
-  text-decoration: underline;
+.footer-links a {
+  background-color: rgba(0, 0, 0, 0.564);
 }
