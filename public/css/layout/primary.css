@@ -5,7 +5,8 @@
 /* background-color: var(--color-bg-page); */
 /* } */
 body {
-  background-image: url('/images/flag-background.png');
+  /* this was move to html because I could not get the path to work on the live site. */
+  /* background-image: url('/images/flag-background.png'); */
   background-repeat: no-repeat;
   background-size: cover;
   backdrop-filter: blur(5px);
