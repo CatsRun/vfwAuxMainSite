@@ -15,6 +15,7 @@ body {
 main {
   margin-top: 3rem;
   max-width: 1000px;
+  /* max-width: 90%; */
   margin: 3rem;
 }
 /* .hero {
@@ -30,4 +31,7 @@ main {
 
 /* .home-page div {
   margin: 2rem;
+} */
+
+/* header {
 } */

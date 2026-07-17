@@ -24,4 +24,11 @@ html {
   .navbar {
     background-color: var(--color-bg);
   }
+
+  /* **images** */
+  --hero-background: radial-gradient(
+    ellipse at center,
+    transparent 0.5%,
+    oklch(30.735% 0.01241 51.616 / 0.8) 100%
+  );
 }
