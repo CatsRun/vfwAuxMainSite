@@ -5,8 +5,7 @@
 /* background-color: var(--color-bg-page); */
 /* } */
 body {
-  /* background-image: url('/images/flag-backgound.png'); */
-  background-image: url('vfwAuxMainSite/images/flag-backgound.png');
+  background-image: url('/images/flag-background.png');
   background-repeat: no-repeat;
   background-size: cover;
   backdrop-filter: blur(5px);
